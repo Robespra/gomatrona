@@ -16,7 +16,7 @@ window.onload=function(){
     return JSON.stringify(dataObj);
   };
 
-  const postToFormspree = formData => fetch('https://formspree.io/xwnnlkqm', {
+  const postToFormspree = formData => fetch('https://formspree.io/f/xbjqaqdv', {
     method: 'POST',
     body: formDataToJson(formData),
     headers: {
@@ -28,12 +28,12 @@ window.onload=function(){
 
     e.preventDefault();
 
-    sendButton.value = 'Sending...';
+    sendButton.value = 'Un momentito...';
 
     const formData = new FormData(this);
 
     postToFormspree(formData).then(response => {
-        sendButton.value = 'Message sent, thank you!';
+        sendButton.value = 'Mensaje enviado, gracias!';
         this.reset();
 
     });

@@ -11,6 +11,8 @@ export default class HTML extends React.Component {
     return (
       <html {...this.props.htmlAttributes}>
         <head>
+          <meta name="robots" content="noindex,nofollow"/>
+          <meta name="googlebot" content="noindex"/>
           <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"/>
           <meta httpEquiv="Content-Language" content="en" />
           <meta name="theme-color" content="#ffffff"/>
@@ -41,7 +43,7 @@ export default class HTML extends React.Component {
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-              
+
                 gtag('config', 'UA-38305116-1');
                   `,
             }}

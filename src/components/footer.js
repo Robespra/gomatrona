@@ -28,66 +28,102 @@ class Footer extends Component {
 		<div>
 			<div className="footer_bg">
 
-<div className="row align-center">
-	<div className="small-11 columns padding10_top padding5_bottom">
+<div className="row align-center" id="contactFormText">
+	<div className="small-11 columns padding10_top">
 	  <h2 className="">Hablamos ?</h2>
 	                 <div className="skills_underline_orange"></div>
-	                <p className="">My goal is to help you create great and profitable products. If you drop me a line about your work and the challenges you face I will reply with some suggestions (I always do) or spread the word to my network if needed. </p>
-	                <p>Get in touch with me by filling the form below. You can also directly  <a href="https://calendly.com/uxpages/30min" target="_blank" rel="noopener" className="link_underlined"> schedule a call <span className="target_blank"></span></a></p>
-					<p>Thanks for your interest !</p>
+	                <p className="">Puedes seguirme en redes sociales, donde publico bastante información de gran valor totalmente
+					<span className="skills_highlight_contacto"> GRATIS</span>, y colaboro con grandes profesionales de la maternidad también volcados en la vivencia de una maternidad y paternidad consciente. </p>
+	                <p>Por favor, rellena el formulario o contacta conmigo directamente por email o mediante redes sociales.</p>
+					<p>Gracias y hasta pronto !</p>
 	</div>
 
-	<div className="small-11 medium-6 columns white border-radius-left-side">
-		<form action="https://formspree.io/xwnnlkqm" name="contactForm" id="contactForm" method="post" className="topBefore padding5_top" >
-			<label for="email"><span className="label-form">Leave your e-mail...</span></label>
+	<div className="small-12 medium-6 columns">
+		<form action="https://formspree.io/f/xbjqaqdv" name="contactForm" id="contactForm" method="post" >
+			<label for="email"><span className="label-form">Tu email...</span></label>
 			<input className="_gotcha" type="text" name="_gotcha"/>
 			<input name="_replyto" id="email" type="email" name="Email" required/>
-			 <label className="label-form padding5_top" for="message"><span>Tell me a bit about your work...</span></label>
-			<textarea id="message" className="" name="message" cols="1" rows="6"></textarea>
-
-			<input id='send-button' className="submitBtn" type="submit" value="Send"/>
+			<label for="tipo_consulta" className="padding5_bottom">Tipo de consulta:</label>
+				<select name="tipo-consulta" id="tipo-consulta">
+					<option value="domicilio_matrona">Matrona domicilio</option>
+					<option value="domicilio_postparto">Visita postparto domicilio</option>
+					<option value="domicilio_lactancia">Lactancia domicilio</option>
+					<option value="consulta_online_embarazo">Consulta online embarazo</option>
+					<option value="consulta_online_preparacion_parto">Consulta online preparación al parto</option>
+					<option value="consulta_online_podromos">Consulta online podromos</option>
+					<option value="consulta_online_postparto">Consulta online postparto</option>
+					<option value="consulta_online_lactancia">Consulta online lactancia</option>
+					<option value="consulta_online_recien_nacido">Consulta online recién nacido</option>
+				</select>
+			 <label className="label-form padding5_top" for="message"><span>Cuéntame más...</span></label>
+			<textarea id="message" className="padding5_top" name="message" cols="1" rows="6"></textarea>
+			<input id='send-button' className="submitBtn" type="submit" value="Enviar"/>
 		</form>
 
 
 
 	</div>
 
-<div className="small-11 medium-5 columns orange border-radius-right-side">
+<div className="small-12 medium-6 columns mtl">
+
 	<div className="row align-center">
-		<div className="small-10">
-			<textarea
-			 onClick={this.copyTextToClipboard}
-			 readOnly
-			 ref={(textarea) => this.textArea = textarea}
-			 value="hola@uxpages.com"
-			 className="TextAreaCopy"
-		  	/>
+		<div className="small-12 padding5_bottom">
+			<div className="row">
+				<div className="small-1 social_icon">
+					<button className="ButtonCopy" onClick={this.copyTextToClipboard}>
+					<img className="icon-svg svgicon-copy" src={require('../images/svgicon-copy.svg')} alt="@matronagoretti instagram"/>
+					<span>{copied ? " " : "Copiado!"}</span>
+					</button>
+				</div>
+				<div className="small-10">
+					<textarea
+					onClick={this.copyTextToClipboard}
+					readOnly
+					ref={(textarea) => this.textArea = textarea}
+					value="gorettimatrona@gmail.com"
+					className="TextAreaCopy"
+					/>
+				</div>
+			</div>
 		</div>
-		<div className="small-1 Copy">
-
-
-
-			<button className="ButtonCopy" onClick={this.copyTextToClipboard}>
-			<svg xmlns="http://www.w3.org/2000/svg" class="CopyIconHover" width="24" height="24" viewBox="0 0 24 24" stroke-width="0.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-					<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-					<rect x="8" y="8" width="12" height="12" rx="2" />
-					<path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2" />
-				</svg>
-				{copied ? " " : "Copied!"}
-			</button>
+		<div className="small-12 padding5_bottom">
+		<Link to="https://www.instagram.com/matronagoretti/" target="_blank" rel="noopener">
+			<div className="row">
+					<div className="small-1 social_icon">
+						<img className="icon-svg svgicon-instagram" src={require('../images/svgicon-instagram.svg')} alt="@matronagoretti instagram"/>
+					</div>
+					<div className="small-10">
+						@matronagoretti
+					</div>
+			</div>
+		</Link>
+		</div>
+		<div className="small-12 padding5_bottom">
+			<Link to="https://www.facebook.com/gorettimatrona/" target="_blank" rel="noopener">
+			<div className="row">
+					<div className="small-1 social_icon">
+						<img className="icon-svg svgicon-facebook" src={require('../images/svgicon-facebook.svg')} alt="@gorettimatrona facebook"/>
+					</div>
+					<div className="small-10">
+						@matronagoretti
+					</div>
+			</div>
+			</Link>
+		</div>
+		<div className="small-12">
+			<p>Contactar conmigo por Whatsapp</p>
+			<Link to="https://api.whatsapp.com/send?phone=34622870298" target="_blank" rel="noopener">
+				<div className="row">
+					<div className="small-1 social_icon">
+				<img className="icon-svg svgicon-whatsapp" src={require('../images/svgicon-whatsapp.svg')} alt=" whatsapp"/>
+				</div>
+					<div className="small-10">
+					+34 622 87 02 98
+					</div>
+				</div>
+			</Link>
 		</div>
 	</div>
-
-
-
-
-<Link to="#" target="_blank" rel="noopener">
-<img className="icon-svg svgicon-instagram" src={require('../images/svgicon-instagram.svg')} alt="uxpages research"/>
-</Link>
-<Link to="https://github.com/Robespra" target="_blank" rel="noopener">
-<img className="icon-svg svgicon-github" src={require('../images/svgicon-github.svg')} alt="uxpages research"/>
-</Link>
-
 </div>
 </div>
 
