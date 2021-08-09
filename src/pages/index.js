@@ -35,7 +35,7 @@ export default () => (
 		<img src={require('../images/z3.jpg')} alt="pages charly espra jeremy robertttt aqui está?"/>
 	</div>
     <div className="small-12 medium-6 columns">
-    <h2>Gorreti Martel, matrona</h2>
+    <h2>Goretti Martel, matrona</h2>
      <p>Haré todo lo posible para que disfrutes de tu embarazo, parto, postparto, lactancia y crianza.
         Te daré información actualizada de las últimas recomendaciones según la evidencia científica, respetando tus procesos y tus ritmos, para que tomes tus propias decisiones.
         Confío en tu cuerpo, en tu bebé y en tu instinto, la sabiduría de mujer está en tus genes. Las fuerzas de la naturaleza están en tí.</p>
@@ -137,7 +137,7 @@ export default () => (
                                 <path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" />
                                 <line x1="9.7" y1="17" x2="14.3" y2="17" />
                             </svg>
-                            ¿Porqué decidí ser matrona?
+                            ¿Por qué decidí ser matrona?
                             </span>
                             <div className="icon">
                                 <span>Así lo he vivido, y así lo transmito</span>
@@ -356,7 +356,7 @@ export default () => (
     <div className="small-5 columns border-skills"></div>
     <div className="small-12 medium-11 columns">
     <h2>Testimonio</h2>
-     <div className="row expanded align-center testimonial_section mtl">
+     <div className="row expanded align-center testimonial_section mtxl">
         <div className="column small-2 testimonial_sign">
            <img src={require('../images/testimonial_intro_sign.svg')} alt="Testimonio intro"/>
         </div>

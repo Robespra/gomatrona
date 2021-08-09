@@ -13,9 +13,9 @@ export default () => (
 <div>
 <Helmet>
       <meta charSet="utf-8" />
-      <title>Goretti matrona - Embarazo</title>
+      <title>Goretti matrona - Postparto</title>
       <meta name="description" content="Goretti Martel matrona en las palmas de gran canaria. Consultas online y visitas a domicilio. Embarazo, parto, postparto, lactancia y crianza"/>
-      <link rel="canonical" href="https://gomatrona.com/embarazo" />
+      <link rel="canonical" href="https://gorettimatrona.com/postparto" />
     </Helmet>
 
 <Header/>

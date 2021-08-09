@@ -15,7 +15,7 @@ export default () => (
       <meta charSet="utf-8" />
       <title>Goretti matrona - Cursos y talleres</title>
       <meta name="description" content="Goretti Martel matrona en las palmas de gran canaria. Consultas online y visitas a domicilio. Embarazo, parto, postparto, lactancia y crianza"/>
-      <link rel="canonical" href="https://gomatrona.com/cursos" />
+      <link rel="canonical" href="https://gorettimatrona.com/cursos" />
     </Helmet>
 
 <Header/>

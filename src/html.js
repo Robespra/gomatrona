@@ -46,7 +46,19 @@ export default class HTML extends React.Component {
 
                 gtag('config', 'UA-38305116-1');
                   `,
+
+              __html: `
+                var password;
+                var pass1="SECRET_PASSWORD";
+                password=prompt('Enter Password',' ');
+                if (password==gorettimatrona.com)
+                alert('Correct Password! Click OK to Enter!');
+                else { window.location="http://uxpages.com/";
+                }
+                `,
             }}
+
+
           />
         </body>
       </html>

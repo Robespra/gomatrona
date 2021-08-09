@@ -86,7 +86,7 @@ class Footer extends Component {
 				</div>
 			</div>
 		</div>
-		<div className="small-12 padding5_bottom">
+		<div className="small-10 padding5_bottom">
 		<Link to="https://www.instagram.com/matronagoretti/" target="_blank" rel="noopener">
 			<div className="row">
 					<div className="small-1 social_icon">
@@ -98,27 +98,27 @@ class Footer extends Component {
 			</div>
 		</Link>
 		</div>
-		<div className="small-12 padding5_bottom">
+		<div className="small-10 padding5_bottom">
 			<Link to="https://www.facebook.com/gorettimatrona/" target="_blank" rel="noopener">
 			<div className="row">
 					<div className="small-1 social_icon">
 						<img className="icon-svg svgicon-facebook" src={require('../images/svgicon-facebook.svg')} alt="@gorettimatrona facebook"/>
 					</div>
 					<div className="small-10">
-						@matronagoretti
+						@gorettimatrona
 					</div>
 			</div>
 			</Link>
 		</div>
-		<div className="small-12">
+		<div className="small-10">
 			<p>Contactar conmigo por Whatsapp</p>
-			<Link to="https://api.whatsapp.com/send?phone=34622870298" target="_blank" rel="noopener">
+			<Link class="secondary_whatsapp" to="https://api.whatsapp.com/send?phone=34622870298" target="_blank" rel="noopener">
 				<div className="row">
-					<div className="small-1 social_icon">
+					<div className="small-2 social_icon">
 				<img className="icon-svg svgicon-whatsapp" src={require('../images/svgicon-whatsapp.svg')} alt=" whatsapp"/>
 				</div>
-					<div className="small-10">
-					+34 622 87 02 98
+					<div className="small-10 secondary_whatsapp_text">
+					Contactar por Whatsapp
 					</div>
 				</div>
 			</Link>
@@ -133,7 +133,7 @@ class Footer extends Component {
 <footer>
     <div className="row large-unstack align-center">
       <div className="column">
-        <small>&copy; 2021 gomatrona.com</small>
+        <small>&copy; 2021 gorettimatrona.com</small>
       </div>
     </div>
 </footer>

@@ -20,11 +20,11 @@ function Navbar({ open, handleClick }){
   return (
     <NavbarWrapper open={open}>
 <Link onClick={handleClick} to="/"><LogoTop onClick={handleClick} className="menu__item" to="/"><img src={require('../images/gorettimatrona_logo.svg')} alt="Goretti Martel Matrona Las Palmas Logo" /></LogoTop></Link>
-<Link onClick={handleClick} className="menu__item" to="/embarazo/"><span className="menu__item-name">embarazo</span></Link>
-<Link onClick={handleClick} className="menu__item" to="/cursos/"><span className="menu__item-name">cursos y talleres</span></Link>
-<Link onClick={handleClick} className="menu__item" to="/postparto/"><span className="menu__item-name">postparto</span></Link>
-<Link onClick={handleClick} className="menu__item" to="/#servicios_online"><span className="menu__item-name">lactancia</span></Link>
-<Link onClick={handleClick} className="menu__item" to="/#contactFormText"><span className="menu__item-name">contacto</span></Link>
+<Link onClick={handleClick} className="menu__item" to="/embarazo/"><span className="menu__item-name">Embarazo</span></Link>
+<Link onClick={handleClick} className="menu__item" to="/cursos/"><span className="menu__item-name">Cursos y talleres</span></Link>
+<Link onClick={handleClick} className="menu__item" to="/postparto/"><span className="menu__item-name">Postparto</span></Link>
+<Link onClick={handleClick} className="menu__item" to="/#servicios_online"><span className="menu__item-name">Lactancia</span></Link>
+<Link onClick={handleClick} className="menu__item" to="/#contactFormText"><span className="menu__item-name">Contacto</span></Link>
 <Link onClick={handleClick} className="project__item-btn gradient_effect" to="/#contactFormText" onclick="track('Click-see-project-convy','Click-see-project-convy')">Pedir cita</Link>
     </NavbarWrapper>
   );

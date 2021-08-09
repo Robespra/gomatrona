@@ -63,6 +63,25 @@ a.logo_top {
   justify-content: center;
 }
 
+.secondary_whatsapp{
+  width: 275px;
+  background: none;
+  height: 40px;
+  border: 1px solid #fff;
+  padding: 7px 25px;
+  border-radius: 4px;
+  display: block;
+  overflow: visible;
+}
+
+.secondary_whatsapp:hover{
+  opacity:0.8;
+}
+
+
+.secondary_whatsapp_text{
+  color:#fff;
+}
 
 
 .hero-section-text {
